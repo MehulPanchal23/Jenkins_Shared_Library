@@ -8,3 +8,4 @@ def call(String Project, String CredID){
                 sh "docker image tag ${Project} ${env.dockerhubuser}/${Project}"
                 sh "docker push ${env.dockerhubuser}/${Project}:latest"
 }
+}
