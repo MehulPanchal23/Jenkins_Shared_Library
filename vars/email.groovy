@@ -1,4 +1,4 @@
-def call(String fromname, String toname, ){
+def call(String fromname, String toname){
   success {
         emailext from: "${fromname}",
                  subject: '$DEFAULT_SUBJECT',
